@@ -19,10 +19,11 @@
       <div class="logo-container">
         <button class="button-navbar" data-btn-nav><i class="fa-solid fa-bars"></i></button>
         <a href="#" class="logo"><img src="assets/images/Sofra.png" alt="Logo"></a>
-        <a href="#" class="cart"><span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>Cart <span>(0)</span>
-        </a>
       </div>
-      <div class="navbar">
+      <a class="cart"><span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>Cart
+        <span>(0)</span>
+      </a>
+      <div class="navbar" data-navbar>
         <div class="logo-navbar">
           <a href="#" class="logo"><img src="assets/images/Sofra.png" alt=""></a>
           <button class="button-navber" data-btn-nav><i class="fa-solid fa-xmark"></i></button>
@@ -37,8 +38,8 @@
           <li><a href="">Home</a></li>
           <li><a href="">About</a></li>
           <li class="drop-down">
-            <a href="">Pages</a>
-            <ul class="sub-menu">
+            <a class="link-dropDown" data-link-dropdown href="">Pages<i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="sub-menu" data-sub-menu>
               <li><a href="">Account</a></li>
               <li><a href="">Setting</a></li>
               <li><a href="">Cart</a></li>
@@ -50,9 +51,16 @@
           <li><a href="">News</a></li>
         </ul>
       </div>
-      <div class="overlay"></div>
+      <div class="overlay" data-overlay data-btn-nav></div>
     </div>
   </div>
+
+
+
+
+
+  <script src="js/main.js"></script>
+
 </body>
 
 </html>

@@ -59,10 +59,6 @@ input[type=number]::-webkit-outer-spin-button {
   padding-inline: 16px;
 }
 
-.overlay {
-  display: none;
-}
-
 .header {
   padding-block-start: 25px;
 }
@@ -70,6 +66,22 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.header .container .overlay {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.3;
+  visibility: hidden;
+  transition: 500ms;
+}
+.header .container .overlay:is(.active) {
+  visibility: visible;
+  opacity: 0.3;
 }
 .header .container .logo-container {
   display: flex;
@@ -79,7 +91,8 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 20px;
 }
 .header .container .logo-container .logo img {
-  width: 120px;
+  width: 100px;
+  margin-inline: 15px;
 }
 .header .container .logo-container .button-navbar {
   margin-inline-end: 10px;
@@ -110,6 +123,9 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
   max-width: 350px;
   padding-inline: 16px;
+  transform: translateX(350px);
+  transition: 500ms;
+  z-index: 4;
 }
 .header .container .navbar .logo-navbar {
   margin-block: 25px;
@@ -148,4 +164,41 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   flex-direction: column;
   gap: 17px;
+}
+.header .container .navbar .list-menu a {
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+.header .container .navbar .list-menu a:hover {
+  color: #7eb693;
+}
+.header .container .navbar .list-menu .drop-down a.link-dropDown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container .navbar .list-menu .sub-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-block-start: 15px;
+  padding-inline-start: 15px;
+  background-color: #EAEAEA;
+  border-radius: 20px;
+  padding: 12px;
+  display: none;
+  transition: all 100ms;
+}
+.header .container .navbar .list-menu .sub-menu li {
+  margin-bottom: 12px;
+  box-shadow: 0 1px 0.4px rgba(0, 0, 0, 0.1);
+}
+.header .container .navbar .list-menu .sub-menu a {
+  padding-bottom: 3px;
+}
+.header .container .navbar .list-menu .sub-menu:is(.active) {
+  display: block;
+}
+.header .container .navbar:is(.active) {
+  transform: translateX(0px);
 }/*# sourceMappingURL=style.css.map */

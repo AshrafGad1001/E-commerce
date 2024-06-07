@@ -1,7 +1,5 @@
 // header Style
-.overlay {
-    display: none;
-}
+
 
 .header {
     padding-block-start: 25px;
@@ -10,6 +8,24 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        .overlay {
+            position: fixed;
+            z-index: 3;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.3;
+            visibility: hidden;
+            transition: 500ms;
+        }
+
+        .overlay:is(.active) {
+            visibility: visible;
+            opacity: 0.3;
+        }
 
         .logo-container {
             display: flex;
@@ -20,7 +36,8 @@
             }
 
             .logo img {
-                width: 120px;
+                width: 100px;
+                margin-inline: 15px;
             }
 
             .button-navbar {
@@ -57,6 +74,9 @@
             width: 100%;
             max-width: 350px;
             padding-inline: 16px;
+            transform: translateX(350px);
+            transition: 500ms;
+            z-index: 4;
 
             .logo-navbar {
                 margin-block: 25px;
@@ -70,7 +90,6 @@
 
                 .fa-xmark {
                     font-size: 20px;
-
                 }
             }
 
@@ -104,7 +123,54 @@
                 display: flex;
                 flex-direction: column;
                 gap: 17px;
+
+                a {
+                    font-weight: bold;
+                    letter-spacing: 1.2px;
+                }
+
+                a:hover {
+                    color: #7eb693;
+                }
+
+                .drop-down {
+                    a.link-dropDown {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                }
+
+                .sub-menu {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    margin-block-start: 15px;
+                    padding-inline-start: 15px;
+                    background-color: #EAEAEA;
+                    border-radius: 20px;
+                    padding: 12px;
+                    display: none;
+                    transition: all 100ms;
+
+                    li {
+                        margin-bottom: 12px;
+                        box-shadow: 0 1px 0.4px rgba(0, 0, 0, 0.1);
+                    }
+
+                    a {
+                        padding-bottom: 3px;
+                    }
+                }
+
+                .sub-menu:is(.active) {
+                    display: block;
+                }
             }
+        }
+
+        .navbar:is(.active) {
+            transform: translateX(0px);
         }
     }
 
