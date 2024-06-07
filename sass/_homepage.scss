@@ -1,0 +1,112 @@
+// header Style
+.overlay {
+    display: none;
+}
+
+.header {
+    padding-block-start: 25px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+
+            .fa-bars {
+                font-size: 20px;
+            }
+
+            .logo img {
+                width: 120px;
+            }
+
+            .button-navbar {
+                margin-inline-end: 10px;
+            }
+        }
+
+        .cart {
+            border: 1px solid #E0E0E0;
+            font-size: 14px;
+            padding: 8px 14px;
+            border-radius: 50px;
+
+            .icon {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                vertical-align: middle;
+                background-color: #274c5B;
+                color: #FFFFFF;
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+            }
+        }
+
+        // ------------Navbar
+        .navbar {
+            position: fixed;
+            height: 100vh;
+            background-color: #FFFFFF;
+            top: 0;
+            right: 0;
+            width: 100%;
+            max-width: 350px;
+            padding-inline: 16px;
+
+            .logo-navbar {
+                margin-block: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .logo img {
+                    width: 140px;
+                }
+
+                .fa-xmark {
+                    font-size: 20px;
+
+                }
+            }
+
+            .search {
+                margin-block-end: 25px;
+
+                form {
+                    position: relative;
+                }
+
+                input {
+                    background-color: #FAFAAFAf;
+                    padding: 10px 15px;
+                    border-radius: 50px;
+                }
+
+                button {
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    top: 3px;
+                    right: 12px;
+                    color: #FAFAFA;
+                    background-color: #7EB693;
+
+                }
+            }
+
+            .list-menu {
+                display: flex;
+                flex-direction: column;
+                gap: 17px;
+            }
+        }
+    }
+
+
+}
