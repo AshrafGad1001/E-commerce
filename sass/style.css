@@ -80,8 +80,30 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #EfD372;
 }
 
+.btn-dark {
+  background-color: #274c5b;
+  color: #FAFAFA;
+}
+
 .section-padding-40 {
   padding-block: 40px;
+}
+
+.head {
+  margin-block-end: 20px;
+}
+.head small {
+  color: #68A47f;
+  font-family: "Yellowtail", cursive;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  display: block;
+  margin-block-end: 10px;
+}
+.head h2 {
+  font-size: 24px;
+  margin-block-end: 20px;
 }
 
 .header {
@@ -243,19 +265,6 @@ input[type=number]::-webkit-outer-spin-button {
 .banner .inner-banner .content .title {
   padding-block-start: 20px;
 }
-.banner .inner-banner .content .title h2 {
-  font-size: 24px;
-  margin-block-end: 20px;
-}
-.banner .inner-banner .content .title small {
-  color: #68A47f;
-  font-family: "Yellowtail", cursive;
-  font-size: 20px;
-  font-weight: 500;
-  font-style: normal;
-  display: block;
-  margin-block-end: 10px;
-}
 .banner .inner-banner .content .title .btn {
   margin-block-end: 20px;
 }
@@ -264,4 +273,41 @@ input[type=number]::-webkit-outer-spin-button {
   display: grid;
   gap: 6px;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.about {
+  background-color: #F9F8F8;
+  font-size: 1.4rem;
+}
+.about .content {
+  line-height: 1.4;
+  align-items: flex-start;
+}
+.about .content p {
+  margin-block-end: 12px;
+}
+.about .content .points {
+  margin-block-start: 20px;
+}
+.about .content .points ul li {
+  margin-block-end: 10px;
+  display: flex;
+}
+.about .content .points ul li img {
+  width: 60px;
+  max-width: 60px;
+  flex: 0 0 auto;
+  padding-inline-end: 7px;
+}
+.about .content .points ul li .icon figure {
+  background-color: #FFFFFF;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.about .content .points ul li .text h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-block-end: 5px;
 }/*# sourceMappingURL=style.css.map */

@@ -23,6 +23,30 @@
     background-color: #EfD372;
 }
 
+.btn-dark {
+    background-color: #274c5b;
+    color: #FAFAFA;
+}
+
 .section-padding-40 {
     padding-block: 40px;
+}
+
+.head {
+    margin-block-end: 20px;
+
+    small {
+        color: #68A47f;
+        font-family: "Yellowtail", cursive;
+        font-size: 20px;
+        font-weight: 500;
+        font-style: normal;
+        display: block;
+        margin-block-end: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-block-end: 20px;
+    }
 }

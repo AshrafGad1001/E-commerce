@@ -1,4 +1,4 @@
-// header Style
+// ----------header Style----------
 .header {
     padding-block-start: 25px;
 
@@ -176,6 +176,7 @@
 
 }
 
+// ----------banner----------
 .banner {
     .inner-banner {
         background-image: url(../assets/images/bg-banner-change.png);
@@ -191,21 +192,23 @@
             .title {
                 padding-block-start: 20px;
 
+                //Replace By Reused Style.....
 
-                h2 {
-                    font-size: 24px;
-                    margin-block-end: 20px;
-                }
 
-                small {
-                    color: #68A47f;
-                    font-family: "Yellowtail", cursive;
-                    font-size: 20px;
-                    font-weight: 500;
-                    font-style: normal;
-                    display: block;
-                    margin-block-end: 10px;
-                }
+                // h2 {
+                //     font-size: 24px;
+                //     margin-block-end: 20px;
+                // }
+
+                // small {
+                //     color: #68A47f;
+                //     font-family: "Yellowtail", cursive;
+                //     font-size: 20px;
+                //     font-weight: 500;
+                //     font-style: normal;
+                //     display: block;
+                //     margin-block-end: 10px;
+                // }
 
                 .btn {
                     margin-block-end: 20px;
@@ -215,10 +218,58 @@
     }
 }
 
+// ----------offer-banner----------
 .offer-banner {
     ul {
         display: grid;
         gap: 6px;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
+}
+
+//----------about----------
+.about {
+    background-color: #F9F8F8;
+    font-size: 1.4rem;
+
+    .content {
+        line-height: 1.4;
+        align-items: flex-start;
+
+        p {
+            margin-block-end: 12px;
+        }
+
+        .points {
+            margin-block-start: 20px;
+
+            ul li {
+                margin-block-end: 10px;
+                display: flex;
+
+
+                img {
+                    width: 60px;
+                    max-width: 60px;
+                    flex: 0 0 auto;
+                    padding-inline-end: 7px;
+                }
+
+                .icon figure {
+                    background-color: #FFFFFF;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 10px;
+                    margin: 10px;
+                }
+
+                .text h4 {
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin-block-end: 5px;
+                }
+            }
+        }
+    }
+
 }
