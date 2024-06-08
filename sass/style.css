@@ -67,7 +67,7 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 12px;
   transition: 300ms;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1px;
 }
 
@@ -104,6 +104,10 @@ input[type=number]::-webkit-outer-spin-button {
 .head h2 {
   font-size: 24px;
   margin-block-end: 20px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .header {
@@ -310,4 +314,79 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 16px;
   font-weight: 700;
   margin-block-end: 5px;
+}
+
+.products ul {
+  margin-block-end: 20px;
+  display: grid;
+  gap: 20px;
+}
+.products ul li .item {
+  background-color: #f9f8f8;
+  border-radius: 20px;
+  padding: 15px;
+  position: relative;
+}
+.products ul li .item figure a {
+  display: block;
+  height: 200px;
+  overflow: hidden;
+  margin-block-end: 10px;
+}
+.products ul li .item figure a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  transition: 500ms;
+}
+.products ul li .item .cat {
+  position: absolute;
+  z-index: 2;
+  color: #FAFAFA;
+  background-color: #274c5B;
+  font-size: 1.4rem;
+  padding: 5px 10px;
+  top: 20px;
+  left: 20px;
+  border-radius: 8px;
+  transition: 300ms;
+}
+.products ul li .item .cat:hover {
+  color: #274c5B;
+  background-color: #7fb392;
+}
+.products ul li .item .caption a {
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  margin-block-end: 5px;
+}
+.products ul li .item .caption .info {
+  border-top: 1px solid #DEDDDD;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.products ul li .item .caption .info .price {
+  display: flex;
+  gap: 8px;
+}
+.products ul li .item .caption .info .price .old {
+  color: #B8B8B8;
+  text-decoration: line-through;
+}
+.products ul li .item .caption .info .price .new {
+  color: #274c5B;
+  font-size: 18px;
+  font-weight: bold;
+}
+.products ul li .item .caption .info .stars {
+  display: flex;
+  gap: 3px;
+  color: #ffa858;
+}
+.products ul .item:hover figure a img {
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */
