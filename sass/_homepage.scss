@@ -214,3 +214,11 @@
         }
     }
 }
+
+.offer-banner {
+    ul {
+        display: grid;
+        gap: 6px;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
