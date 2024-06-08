@@ -1,6 +1,4 @@
 // header Style
-
-
 .header {
     padding-block-start: 25px;
 
@@ -77,6 +75,7 @@
             transform: translateX(350px);
             transition: 500ms;
             z-index: 4;
+            overflow-y: auto;
 
             .logo-navbar {
                 margin-block: 25px;
@@ -175,4 +174,43 @@
     }
 
 
+}
+
+.banner {
+    .inner-banner {
+        background-image: url(../assets/images/bg-banner-change.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 200px;
+        margin-block-start: 20px;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                padding-block-start: 20px;
+
+
+                h2 {
+                    font-size: 24px;
+                    margin-block-end: 20px;
+                }
+
+                small {
+                    color: #68A47f;
+                    font-family: "Yellowtail", cursive;
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-style: normal;
+                    display: block;
+                    margin-block-end: 10px;
+                }
+
+                .btn {
+                    margin-block-end: 20px;
+                }
+            }
+        }
+    }
 }

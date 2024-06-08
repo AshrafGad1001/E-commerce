@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
 /* Reset All Element  */
 *,
 *::before,
@@ -57,6 +58,26 @@ input[type=number]::-webkit-outer-spin-button {
 
 .container {
   padding-inline: 16px;
+}
+
+.btn {
+  background-color: #FAFAFA;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 12px;
+  transition: 300ms;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  color: #FFFFFF;
+  background-color: #68a47f;
+}
+
+.btn-primary {
+  background-color: #EfD372;
 }
 
 .header {
@@ -126,6 +147,7 @@ input[type=number]::-webkit-outer-spin-button {
   transform: translateX(350px);
   transition: 500ms;
   z-index: 4;
+  overflow-y: auto;
 }
 .header .container .navbar .logo-navbar {
   margin-block: 25px;
@@ -201,4 +223,35 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .header .container .navbar:is(.active) {
   transform: translateX(0px);
+}
+
+.banner .inner-banner {
+  background-image: url(../assets/images/bg-banner-change.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  margin-block-start: 20px;
+}
+.banner .inner-banner .content {
+  display: flex;
+  flex-direction: column;
+}
+.banner .inner-banner .content .title {
+  padding-block-start: 20px;
+}
+.banner .inner-banner .content .title h2 {
+  font-size: 24px;
+  margin-block-end: 20px;
+}
+.banner .inner-banner .content .title small {
+  color: #68A47f;
+  font-family: "Yellowtail", cursive;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  display: block;
+  margin-block-end: 10px;
+}
+.banner .inner-banner .content .title .btn {
+  margin-block-end: 20px;
 }/*# sourceMappingURL=style.css.map */
