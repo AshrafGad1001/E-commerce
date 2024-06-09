@@ -475,4 +475,44 @@ input[type=number]::-webkit-outer-spin-button {
   height: 120px;
   border: 3px solid #7EB693;
   border-radius: inherit;
+}
+
+.offer {
+  background-color: #274c5B;
+}
+.offer .head h2 {
+  color: #FAFAFA;
+}
+.offer .head .btn {
+  display: none;
+}
+
+.who-we-are .container {
+  padding: 0;
+}
+.who-we-are .container .image {
+  margin-block-end: 16px;
+  position: relative;
+  z-index: 1;
+}
+.who-we-are .container .content {
+  background-color: #f9f8f8;
+  padding-inline: 16px;
+  padding-block: 35px;
+  margin-inline: 16px;
+  position: relative;
+  z-index: 2;
+  top: -70px;
+  border-radius: 8px;
+}
+.who-we-are .container .content .point li {
+  margin-block-end: 16px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+.who-we-are .container .content .point li h3 {
+  font-weight: 500;
+  font-size: 17px;
+  margin-block-end: 5px;
 }/*# sourceMappingURL=style.css.map */

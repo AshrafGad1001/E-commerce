@@ -472,3 +472,64 @@
         }
     }
 }
+
+// ---------offer---------------
+.offer {
+    background-color: #274c5B;
+
+    .head {
+
+        h2 {
+            color: #FAFAFA;
+        }
+
+        .btn {
+            display: none;
+        }
+    }
+
+
+
+}
+
+
+
+// ---------------who-we-are -------------------
+.who-we-are {
+
+    .container {
+        padding: 0;
+
+        .image {
+            margin-block-end: 16px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content {
+            background-color: #f9f8f8;
+            padding-inline: 16px;
+            padding-block: 35px;
+            margin-inline: 16px;
+            position: relative;
+            z-index: 2;
+            top: -70px;
+            border-radius: 8px;
+
+            .point {
+                li {
+                    margin-block-end: 16px;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    line-height: 1.4;
+
+                    h3 {
+                        font-weight: 500;
+                        font-size: 17px;
+                        margin-block-end: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
