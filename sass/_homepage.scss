@@ -380,9 +380,6 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 40px;
-
-
 
     .swiper-pagination-bullet-active {
         background-color: #EFD372;
@@ -429,4 +426,49 @@
         bottom: -15px;
     }
 
+    .statistics {
+        border: 1px solid #DDDDDD;
+        margin-block-start: 60px;
+        padding-block-start: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+        .inner-item {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f1f1f1;
+            border-radius: 50%;
+            padding: 5px;
+
+            strong {
+                font-size: 2rem;
+                display: block;
+                margin-block-end: 5px;
+            }
+
+            h5 {
+                width: 50px;
+                font-weight: 400;
+            }
+        }
+
+        .inner-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 120px;
+            height: 120px;
+            border: 3px solid #7EB693;
+            border-radius: inherit;
+            // transform: scale(1.15);
+        }
+    }
 }
