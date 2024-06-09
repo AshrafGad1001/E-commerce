@@ -355,11 +355,11 @@
                         }
                     }
 
-                    .stars {
-                        display: flex;
-                        gap: 3px;
-                        color: #ffa858;
-                    }
+                    // .stars {
+                    //     display: flex;
+                    //     gap: 3px;
+                    //     color: #ffa858;
+                    // }
                 }
             }
 
@@ -368,6 +368,49 @@
 
         .item:hover figure a img {
             transform: scale(1.1);
+        }
+    }
+}
+
+
+// ---------feedback---------------
+
+.feedback {
+    background-image: url(../assets/images/bg-feedback-section.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .item {
+        figure {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-inline: auto;
+            overflow: hidden;
+            margin-block-end: 12px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .content {
+            margin-block: 16px;
+            font-size: 1.4rem;
+            letter-spacing: 1.1px;
+            line-height: 1.4;
+        }
+
+        .name {
+            font-size: 1.2rem;
+
+            h3 {
+                font-size: 1.5rem;
+                margin-block-end: 4px;
+            }
         }
     }
 }
