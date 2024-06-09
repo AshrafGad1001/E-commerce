@@ -380,6 +380,17 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: 40px;
+
+
+
+    .swiper-pagination-bullet-active {
+        background-color: #EFD372;
+    }
+
+    .slider {
+        position: relative;
+    }
 
     .item {
         figure {
@@ -413,4 +424,9 @@
             }
         }
     }
+
+    .swiper-pagination {
+        bottom: -15px;
+    }
+
 }

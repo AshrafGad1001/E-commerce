@@ -399,6 +399,13 @@ input[type=number]::-webkit-outer-spin-button {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 40px;
+}
+.feedback .swiper-pagination-bullet-active {
+  background-color: #EFD372;
+}
+.feedback .slider {
+  position: relative;
 }
 .feedback .item figure {
   width: 70px;
@@ -426,4 +433,7 @@ input[type=number]::-webkit-outer-spin-button {
 .feedback .item .name h3 {
   font-size: 1.5rem;
   margin-block-end: 4px;
+}
+.feedback .swiper-pagination {
+  bottom: -15px;
 }/*# sourceMappingURL=style.css.map */
