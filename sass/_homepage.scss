@@ -44,6 +44,7 @@
         }
 
         .cart {
+            width: 120px;
             border: 1px solid #E0E0E0;
             font-size: 14px;
             padding: 8px 14px;
@@ -59,6 +60,7 @@
                 width: 26px;
                 height: 26px;
                 border-radius: 50%;
+                margin: 3px;
             }
         }
 
@@ -100,7 +102,8 @@
                 }
 
                 input {
-                    background-color: #FAFAAFAf;
+                    min-width: 150px;
+                    background-color: rgba($color: #274c5B, $alpha: 0.15);
                     padding: 10px 15px;
                     border-radius: 50px;
                 }
@@ -111,7 +114,7 @@
                     height: 30px;
                     border-radius: 50%;
                     top: 3px;
-                    right: 12px;
+                    right: 3px;
                     color: #FAFAFA;
                     background-color: #7EB693;
 
@@ -146,11 +149,12 @@
                     gap: 12px;
                     margin-block-start: 15px;
                     padding-inline-start: 15px;
-                    background-color: #EAEAEA;
+                    background-color: #DDDDDD;
                     border-radius: 20px;
                     padding: 12px;
                     display: none;
                     transition: all 100ms;
+
 
                     li {
                         margin-bottom: 12px;
@@ -1081,6 +1085,7 @@
 
     // ----------who-we-are -----------
     .who-we-are {
+
         padding: 0 !important;
 
         .container {
@@ -1088,10 +1093,18 @@
             display: flex;
             align-items: center;
 
+            .image {
+                img {
+                    height: 600px;
+                    position: relative;
+                    width: auto;
+                }
+            }
+
             .content {
                 position: static;
                 margin: 0;
-                transform: translateX(-20%);
+                transform: translateX(-50%);
             }
         }
     }
@@ -1169,10 +1182,115 @@
 }
 
 @media screen and (min-width:1200px) {
+
     //-----------reusedStyle----------
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        max-width: 1150px;
+    }
 
     // ----------header Style----------
+    .header {
+        padding-block-start: 15px;
 
+        .container {
+
+            .button-navbar,
+            .overlay {
+                display: none;
+            }
+
+            .logo-container {
+                order: -1;
+
+                .logo {
+                    margin-inline-start: -25px;
+
+                    img {
+                        width: 170px;
+                    }
+                }
+            }
+
+            .navbar {
+                all: unset;
+                display: flex;
+                order: 1;
+
+                .logo-navbar {
+                    display: none;
+                }
+
+                .search {
+                    margin: 0;
+                    margin-inline-start: 60px;
+
+                    input {
+                        width: 200px;
+                        min-height: 50px;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+
+                    button {
+                        font-size: 18px;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        top: 3px;
+                        right: 3px;
+
+                        i {}
+                    }
+                }
+
+                .list-menu {
+                    order: -1;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 25px;
+
+                    a.link-dropDown i {
+                        font-size: 12px;
+                        padding-inline-start: 2px;
+                    }
+                }
+
+                ul {
+                    .drop-down {
+                        position: relative;
+
+                        .sub-menu {
+                            position: absolute;
+                            min-width: 180px;
+                            padding-inline: 15px;
+                            box-shadow: 1px 1px 10px rgba($color: #274c5B, $alpha: 0.35);
+                            transform: translateY(15px);
+                        }
+                    }
+                }
+            }
+
+            .cart {
+                order: 2;
+                margin-inline-start: 20px;
+                font-size: 15px;
+                text-align: center;
+                min-height: 50px;
+
+                .icon {
+                    padding: 5px;
+                }
+            }
+
+
+        }
+
+
+    }
 
     // ----------banner----------------
 
@@ -1185,6 +1303,11 @@
 
     //-----------products--------------
 
+    .products {
+        ul {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
 
     // ---------feedback---------------
 
