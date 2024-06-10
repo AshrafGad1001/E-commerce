@@ -232,6 +232,12 @@
     background-color: #F9F8F8;
     font-size: 1.4rem;
 
+    .image {
+        img {
+            display: none;
+        }
+    }
+
     .content {
         line-height: 1.4;
         align-items: flex-start;
@@ -673,8 +679,6 @@
     }
 }
 
-
-
 //--------------newsletter----------------
 
 .newsletter {
@@ -714,5 +718,96 @@
                 letter-spacing: 1px;
             }
         }
+    }
+}
+
+//--------------Footer----------------
+
+.footer {
+    padding-block-start: 50px;
+
+    .container {
+        display: grid;
+
+        .logo-container {
+            order: -1;
+        }
+    }
+
+    .item-footer {
+        margin-block-end: 20px;
+        padding-block-end: 20px;
+        font-size: 16px;
+        border-bottom: 1px solid #DDDDDD;
+
+        .logo {
+            text-align: center !important;
+            display: block;
+            margin-block-end: 12px;
+        }
+
+        .logo~p {
+            margin-block-end: 12px;
+            font-size: 16px;
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+
+            a {
+                background-color: #EFF6F1;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                flex: 0 0 auto;
+                cursor: pointer;
+                transition: 300ms;
+
+                i {
+                    font-size: 20px;
+                }
+            }
+
+            a:hover {
+                color: #FAFAFA;
+                background-color: #7eb693;
+            }
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-block-end: 18px;
+        }
+
+        strong {
+            display: block;
+            margin-block-end: 5px;
+        }
+
+        ul li {
+            margin-block-end: 10px;
+            transition: 300ms;
+        }
+
+        ul li:hover {
+            color: #7EB693;
+            padding-inline-start: 5px;
+        }
+
+
+    }
+
+
+    .copyright {
+        border-top: 1px solid #DDDDDD;
+        padding-block: 15px;
+        font-size: 14px;
+        text-align: center;
     }
 }

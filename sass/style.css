@@ -302,6 +302,9 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #F9F8F8;
   font-size: 1.4rem;
 }
+.about .image img {
+  display: none;
+}
 .about .content {
   line-height: 1.4;
   align-items: flex-start;
@@ -674,4 +677,76 @@ input[type=number]::-webkit-outer-spin-button {
   max-width: 180px;
   color: #FAFAFA;
   letter-spacing: 1px;
+}
+
+.footer {
+  padding-block-start: 50px;
+}
+.footer .container {
+  display: grid;
+}
+.footer .container .logo-container {
+  order: -1;
+}
+.footer .item-footer {
+  margin-block-end: 20px;
+  padding-block-end: 20px;
+  font-size: 16px;
+  border-bottom: 1px solid #DDDDDD;
+}
+.footer .item-footer .logo {
+  text-align: center !important;
+  display: block;
+  margin-block-end: 12px;
+}
+.footer .item-footer .logo ~ p {
+  margin-block-end: 12px;
+  font-size: 16px;
+}
+.footer .item-footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.footer .item-footer .social a {
+  background-color: #EFF6F1;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  cursor: pointer;
+  transition: 300ms;
+}
+.footer .item-footer .social a i {
+  font-size: 20px;
+}
+.footer .item-footer .social a:hover {
+  color: #FAFAFA;
+  background-color: #7eb693;
+}
+.footer .item-footer h2 {
+  font-size: 20px;
+  margin-block-end: 18px;
+}
+.footer .item-footer strong {
+  display: block;
+  margin-block-end: 5px;
+}
+.footer .item-footer ul li {
+  margin-block-end: 10px;
+  transition: 300ms;
+}
+.footer .item-footer ul li:hover {
+  color: #7EB693;
+  padding-inline-start: 5px;
+}
+.footer .copyright {
+  border-top: 1px solid #DDDDDD;
+  padding-block: 15px;
+  font-size: 14px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
