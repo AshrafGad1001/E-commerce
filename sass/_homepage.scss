@@ -307,6 +307,7 @@
                         height: 100%;
                         object-fit: scale-down;
                         transition: 500ms;
+
                     }
                 }
             }
@@ -434,7 +435,7 @@
     .statistics {
         border: 1px solid #DDDDDD;
         margin-block-start: 60px;
-        padding-block-start: 60px;
+        padding: 12px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
@@ -810,4 +811,256 @@
         font-size: 14px;
         text-align: center;
     }
+}
+
+//------------------------------
+//Responsive (Media Query) 
+//------------------------------
+
+@media screen and (min-width:575px) {
+
+
+    //-----------reusedStyle----------
+    .container {
+        max-width: 550px;
+        margin-inline: auto;
+    }
+
+    // ----------header Style----------
+
+
+    // ----------banner----------------
+    .banner {
+        .inner-banner {
+            min-height: 300px;
+
+            .content {
+                padding-block-start: 60px;
+            }
+        }
+    }
+
+    // ----------offer-banner----------
+
+
+    //----------about------------------
+
+
+    //-----------products--------------
+    .products {
+        ul {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    // ---------feedback---------------
+    .feedback .statistics .inner-item {
+        margin: auto;
+    }
+
+    // ---------offer------------------
+
+
+    // ----------who-we-are -----------
+
+
+    //--------------gallery------------
+
+    .gallery {
+        ul {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    //--------------blog---------------
+    .blog {
+        .head {
+            text-align: center;
+            padding-inline: 20px;
+        }
+
+        ul {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    //-----------newsletter------------
+    .newsletter {
+        form {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+
+            input {
+                margin-block-end: 0;
+                min-height: 40px;
+            }
+
+            .btn {
+                flex: 0 0 150px;
+                margin-block-start: -12px;
+            }
+        }
+    }
+
+    //-----------Footer----------------
+
+
+}
+
+@media screen and (min-width:768px) {
+    //-----------reusedStyle----------
+
+    // ----------header Style----------
+
+
+    // ----------banner----------------
+
+
+    // ----------offer-banner----------
+
+
+    //----------about------------------
+
+
+    //-----------products--------------
+
+
+    // ---------feedback---------------
+
+
+    // ---------offer------------------
+
+
+    // ----------who-we-are -----------
+
+
+    //--------------gallery------------
+
+
+    //--------------blog---------------
+
+
+    //-----------newsletter------------
+
+
+    //-----------Footer----------------
+}
+
+@media screen and (min-width:992px) {
+    //-----------reusedStyle----------
+
+    // ----------header Style----------
+
+
+    // ----------banner----------------
+
+
+    // ----------offer-banner----------
+
+
+    //----------about------------------
+
+
+    //-----------products--------------
+
+
+    // ---------feedback---------------
+
+
+    // ---------offer------------------
+
+
+    // ----------who-we-are -----------
+
+
+    //--------------gallery------------
+
+
+    //--------------blog---------------
+
+
+    //-----------newsletter------------
+
+
+    //-----------Footer----------------
+}
+
+@media screen and (min-width:1200px) {
+    //-----------reusedStyle----------
+
+    // ----------header Style----------
+
+
+    // ----------banner----------------
+
+
+    // ----------offer-banner----------
+
+
+    //----------about------------------
+
+
+    //-----------products--------------
+
+
+    // ---------feedback---------------
+
+
+    // ---------offer------------------
+
+
+    // ----------who-we-are -----------
+
+
+    //--------------gallery------------
+
+
+    //--------------blog---------------
+
+
+    //-----------newsletter------------
+
+
+    //-----------Footer----------------
+}
+
+@media screen and (min-width:1400px) {
+    //-----------reusedStyle----------
+
+    // ----------header Style----------
+
+
+    // ----------banner----------------
+
+
+    // ----------offer-banner----------
+
+
+    //----------about------------------
+
+
+    //-----------products--------------
+
+
+    // ---------feedback---------------
+
+
+    // ---------offer------------------
+
+
+    // ----------who-we-are -----------
+
+
+    //--------------gallery------------
+
+
+    //--------------blog---------------
+
+
+    //-----------newsletter------------
+
+
+    //-----------Footer----------------
 }

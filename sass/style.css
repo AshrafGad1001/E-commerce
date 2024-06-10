@@ -453,7 +453,7 @@ input[type=number]::-webkit-outer-spin-button {
 .feedback .statistics {
   border: 1px solid #DDDDDD;
   margin-block-start: 60px;
-  padding-block-start: 60px;
+  padding: 12px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
@@ -749,4 +749,46 @@ input[type=number]::-webkit-outer-spin-button {
   padding-block: 15px;
   font-size: 14px;
   text-align: center;
+}
+
+@media screen and (min-width: 575px) {
+  .container {
+    max-width: 550px;
+    margin-inline: auto;
+  }
+  .banner .inner-banner {
+    min-height: 300px;
+  }
+  .banner .inner-banner .content {
+    padding-block-start: 60px;
+  }
+  .products ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .feedback .statistics .inner-item {
+    margin: auto;
+  }
+  .gallery ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .blog .head {
+    text-align: center;
+    padding-inline: 20px;
+  }
+  .blog ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .newsletter form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .newsletter form input {
+    margin-block-end: 0;
+    min-height: 40px;
+  }
+  .newsletter form .btn {
+    flex: 0 0 150px;
+    margin-block-start: -12px;
+  }
 }/*# sourceMappingURL=style.css.map */
