@@ -1289,6 +1289,7 @@
 
             .logo-container {
                 order: -1;
+                flex: 0 0 10%;
 
                 .logo {
                     margin-inline-start: -25px;
@@ -1303,6 +1304,9 @@
                 all: unset;
                 display: flex;
                 order: 1;
+                flex: 0 0 80%;
+                justify-content: space-between;
+                align-items: center;
 
                 .logo-navbar {
                     display: none;
@@ -1343,6 +1347,8 @@
                 }
 
                 ul {
+                    margin-inline-start: 30px;
+
                     .drop-down {
                         position: relative;
 
@@ -1359,6 +1365,7 @@
 
             .cart {
                 order: 2;
+                flex: 0 0 10%;
                 margin-inline-start: 20px;
                 font-size: 15px;
                 text-align: center;
@@ -1377,6 +1384,15 @@
 
     // ----------banner----------------
 
+    .banner {
+        .inner-banner {
+            min-height: 600px;
+        }
+
+        .content {
+            padding-block-start: 240px;
+        }
+    }
 
     // ----------offer-banner----------
 
@@ -1389,6 +1405,10 @@
     .products {
         ul {
             grid-template-columns: repeat(4, 1fr);
+
+            li .item figure a {
+                height: 250px;
+            }
         }
     }
 
@@ -1414,7 +1434,23 @@
 }
 
 @media screen and (min-width:1400px) {
+
     //-----------reusedStyle----------
+    html {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        max-width: 1250px;
+    }
+
+    .section-padding-40 {
+        padding-block: 60px;
+    }
 
     // ----------header Style----------
 
@@ -1423,13 +1459,42 @@
 
 
     // ----------offer-banner----------
-
+    .offer-banner {
+        ul {
+            gap: 25px;
+        }
+    }
 
     //----------about------------------
+    .about {
+        font-size: 1.2rem;
 
+        .content .points ul li {
+            align-items: center;
+
+            .icon {
+                width: 100px;
+
+                figure {
+                    width: 100px;
+                    height: 100px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: scale-down;
+                    }
+                }
+            }
+        }
+    }
 
     //-----------products--------------
-
+    .products {
+        ul {
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
 
     // ---------feedback---------------
 
