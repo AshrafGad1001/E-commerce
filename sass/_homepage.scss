@@ -910,19 +910,50 @@
 }
 
 @media screen and (min-width:768px) {
+
     //-----------reusedStyle----------
+    .container {
+        max-width: 750px;
+    }
+
+    .btn {
+        font-size: 17px;
+    }
 
     // ----------header Style----------
 
 
     // ----------banner----------------
+    .banner {
+        .inner-banner {
+            min-height: 400px;
 
+            .content {
+                padding-block-start: 80px;
+
+                .head {
+                    small {
+                        font-size: 26px;
+                    }
+
+                    h2 {
+                        font-size: 37px;
+                        margin-block-end: 28px;
+                    }
+                }
+
+                .title .btn {
+                    font-size: 17px;
+                }
+            }
+        }
+
+    }
 
     // ----------offer-banner----------
 
 
     //----------about------------------
-
 
     //-----------products--------------
 
