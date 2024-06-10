@@ -28,6 +28,17 @@
     color: #FAFAFA;
 }
 
+.btn-outlined {
+    color: #274c5b !important;
+    background-color: transparent;
+    border: 1px solid;
+}
+
+.btn-outlined:hover {
+    color: #FAFAFA !important;
+    background-color: #274c5b;
+}
+
 .section-padding-40 {
     padding-block: 40px;
 }
