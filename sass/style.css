@@ -848,14 +848,80 @@ input[type=number]::-webkit-outer-spin-button {
   .container {
     max-width: 950px;
   }
-  .head small {
-    font-size: 22px;
+  .header {
+    padding-block-start: 15px;
   }
-  .btn {
-    font-size: 20px;
+  .header .container .button-navbar,
+  .header .container .overlay {
+    display: none;
   }
-  .banner .inner-banner {
-    min-height: 450px;
+  .header .container .logo-container {
+    order: -1;
+  }
+  .header .container .logo-container .logo {
+    margin-inline-start: -30px;
+  }
+  .header .container .logo-container .logo img {
+    width: 170px;
+  }
+  .header .container .navbar {
+    all: unset;
+    display: flex;
+    order: 1;
+    padding-inline-start: 25px;
+  }
+  .header .container .navbar .logo-navbar {
+    display: none;
+  }
+  .header .container .navbar .search {
+    margin: 0;
+    margin-inline-start: 60px;
+  }
+  .header .container .navbar .search input {
+    width: 200px;
+    min-height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .header .container .navbar .search button {
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 3px;
+    right: 3px;
+  }
+  .header .container .navbar .list-menu {
+    font-size: 14px;
+    order: -1;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+  }
+  .header .container .navbar .list-menu a.link-dropDown i {
+    font-size: 12px;
+    padding-inline-start: 2px;
+  }
+  .header .container .navbar ul .drop-down {
+    position: relative;
+  }
+  .header .container .navbar ul .drop-down .sub-menu {
+    position: absolute;
+    min-width: 180px;
+    padding-inline: 15px;
+    box-shadow: 1px 1px 10px rgba(39, 76, 91, 0.35);
+    transform: translateY(15px);
+  }
+  .header .container .cart {
+    order: 2;
+    min-width: 114px;
+    margin-inline-start: 20px;
+    font-size: 15px;
+    text-align: center;
+    min-height: 50px;
+  }
+  .header .container .cart .icon {
+    padding: 5px;
   }
   .about .container {
     display: flex;
@@ -995,6 +1061,7 @@ input[type=number]::-webkit-outer-spin-button {
     right: 3px;
   }
   .header .container .navbar .list-menu {
+    font-size: 20px;
     order: -1;
     flex-direction: row;
     align-items: center;

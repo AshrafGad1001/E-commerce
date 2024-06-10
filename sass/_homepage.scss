@@ -1018,25 +1018,109 @@
         max-width: 950px;
     }
 
-    .head {
-        small {
-            font-size: 22px;
-        }
-    }
-
-    .btn {
-        font-size: 20px;
-    }
-
     // ----------header Style----------
+    .header {
+        padding-block-start: 15px;
 
+        .container {
+
+            .button-navbar,
+            .overlay {
+                display: none;
+            }
+
+            .logo-container {
+                order: -1;
+
+                .logo {
+                    margin-inline-start: -30px;
+
+                    img {
+                        width: 170px;
+                    }
+                }
+            }
+
+            .navbar {
+                all: unset;
+                display: flex;
+                order: 1;
+                padding-inline-start: 25px;
+
+                .logo-navbar {
+                    display: none;
+                }
+
+                .search {
+                    margin: 0;
+                    margin-inline-start: 60px;
+
+                    input {
+                        width: 200px;
+                        min-height: 50px;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+
+                    button {
+                        font-size: 18px;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        top: 3px;
+                        right: 3px;
+                    }
+                }
+
+                .list-menu {
+                    font-size: 14px;
+                    order: -1;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 25px;
+
+                    a.link-dropDown i {
+                        font-size: 12px;
+                        padding-inline-start: 2px;
+                    }
+                }
+
+                ul {
+                    .drop-down {
+                        position: relative;
+
+                        .sub-menu {
+                            position: absolute;
+                            min-width: 180px;
+                            padding-inline: 15px;
+                            box-shadow: 1px 1px 10px rgba($color: #274c5B, $alpha: 0.35);
+                            transform: translateY(15px);
+                        }
+                    }
+                }
+            }
+
+            .cart {
+                order: 2;
+                min-width: 114px;
+                margin-inline-start: 20px;
+                font-size: 15px;
+                text-align: center;
+                min-height: 50px;
+
+                .icon {
+                    padding: 5px;
+                }
+            }
+
+
+        }
+
+
+    }
 
     // ----------banner----------------
-    .banner {
-        .inner-banner {
-            min-height: 450px;
-        }
-    }
+
 
     // ----------offer-banner----------
 
@@ -1242,12 +1326,11 @@
                         border-radius: 50%;
                         top: 3px;
                         right: 3px;
-
-                        i {}
                     }
                 }
 
                 .list-menu {
+                    font-size: 20px;
                     order: -1;
                     flex-direction: row;
                     align-items: center;
