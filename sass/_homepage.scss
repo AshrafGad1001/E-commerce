@@ -434,6 +434,7 @@
 
     .statistics {
         border: 1px solid #DDDDDD;
+        border-radius: 12px;
         margin-block-start: 60px;
         padding: 12px;
         display: grid;
@@ -541,6 +542,7 @@
 //--------------gallery----------------
 .gallery {
     margin-block-start: -100px;
+    background-color: #F1F8F4;
 
     ul {
         display: grid;
@@ -713,6 +715,8 @@
         }
 
         .head {
+
+
             h2 {
                 max-width: 180px;
                 color: #FAFAFA;
@@ -863,7 +867,6 @@
 
     // ----------who-we-are -----------
 
-
     //--------------gallery------------
 
     .gallery {
@@ -966,9 +969,31 @@
 
     // ----------who-we-are -----------
 
+    .who-we-are {
+        padding: 0 !important;
+
+        .container {
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+
+            .content {
+                position: static;
+                margin: 0;
+                transform: translateX(-20%);
+            }
+        }
+    }
+
+    .who-we-are .image,
+    .who-we-are .content {
+        flex: 0 0 50%;
+    }
 
     //--------------gallery------------
-
+    .gallery {
+        margin: 0;
+    }
 
     //--------------blog---------------
 
@@ -980,42 +1005,167 @@
 }
 
 @media screen and (min-width:992px) {
+    html {
+        font-size: 12px;
+    }
+
     //-----------reusedStyle----------
+    .container {
+        max-width: 950px;
+    }
+
+    .head {
+        small {
+            font-size: 22px;
+        }
+    }
+
+    .btn {
+        font-size: 20px;
+    }
 
     // ----------header Style----------
 
 
     // ----------banner----------------
-
+    .banner {
+        .inner-banner {
+            min-height: 450px;
+        }
+    }
 
     // ----------offer-banner----------
 
 
     //----------about------------------
+    .about {
+        .container {
 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .image img {
+            display: block;
+        }
+    }
 
     //-----------products--------------
 
+    .products {
+        ul {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
 
     // ---------feedback---------------
+    .feedback {
+        .slider {
+            margin-inline: auto;
+            max-width: 65%;
+        }
 
+        .statistics {
+            max-width: 65%;
+            margin-block-start: 20px;
+            margin-inline: auto;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+    }
 
     // ---------offer------------------
 
 
     // ----------who-we-are -----------
+    .who-we-are {
+        padding: 0 !important;
 
+        .container {
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+
+            .content {
+                position: static;
+                margin: 0;
+                transform: translateX(-20%);
+            }
+        }
+    }
+
+    .who-we-are .image,
+    .who-we-are .content {
+        flex: 0 0 50%;
+    }
 
     //--------------gallery------------
 
+    .gallery {
+        margin: 0;
+    }
 
     //--------------blog---------------
-
+    .blog {
+        .item figure a.image {
+            height: 300px;
+        }
+    }
 
     //-----------newsletter------------
+    .newsletter {
+        .container {
+            .content {
+                display: flex;
+                align-items: center;
+                padding-block: 60px;
+                padding-inline: 30px;
 
+                .head {
+                    flex: 0 0 40%
+                }
+
+                form {
+                    flex: 0 0 60%
+                }
+            }
+        }
+    }
 
     //-----------Footer----------------
+    .footer {
+        .container {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+
+            .item-footer {
+                margin-block-end: 0;
+                margin-inline-end: 15px;
+                padding-block-end: 0;
+                padding-inline-end: 15px;
+                border-bottom: 0;
+                border-right: 1px solid #DDDDDD;
+            }
+
+            .item-footer:last-child {
+                border-right: none
+            }
+
+            .logo-container {
+                order: unset;
+            }
+        }
+
+        .copyright {
+            margin-block-start: 30px;
+
+            .container {
+                display: block;
+            }
+        }
+    }
 }
 
 @media screen and (min-width:1200px) {
