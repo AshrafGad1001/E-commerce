@@ -4,16 +4,12 @@
     margin-block-end: 10px;
 }
 
-
 .entry-header.about-page {
     margin-block-start: 30px;
     background-image: url(../assets/images/about/about-banner.png);
 }
 
-
-
 //---------------- About -----------------
-
 
 .about.about-page {
     background-color: #FFFFFF;
@@ -50,11 +46,7 @@
 
 }
 
-
-
-
 //---------------why-choose-us-------------
-
 .why-choose-us.about-page {
     background-color: #F9F8F8;
 
@@ -124,6 +116,7 @@
             }
 
         }
+
         .inner02 {
 
 
@@ -157,6 +150,62 @@
 
                         p {
                             color: rgba($color: rgb(39, 76, 91), $alpha: 0.6);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//-------------team-------------
+.team.about-page {
+    .container {
+
+        .head {
+            margin-block-end: 30px;
+
+            p {
+                font-size: 14px !important;
+                font-weight: 500;
+                letter-spacing: 1px;
+            }
+        }
+
+        ul.items {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+
+            .item {
+                background-color: #F9F8F8;
+                overflow: hidden;
+
+                .image {
+                    height: 400px;
+                    margin-block-end: 8px;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .text {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .inner-text {
+                        h2 {
+                            margin-block-end: 8px;
+                        }
+                    }
+
+                    .inner-socail {
+                        a {
+                            padding-inline-start: 3px;
                         }
                     }
                 }

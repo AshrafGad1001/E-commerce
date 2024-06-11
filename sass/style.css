@@ -121,6 +121,11 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: center;
 }
 
+.w-50 {
+  width: 50%;
+  margin-inline: auto;
+}
+
 .stars {
   display: flex;
   gap: 3px;
@@ -1280,4 +1285,43 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .why-choose-us.about-page .container .inner02 ul li .item .caption p {
   color: rgba(39, 76, 91, 0.6);
+}
+
+.team.about-page .container .head {
+  margin-block-end: 30px;
+}
+.team.about-page .container .head p {
+  font-size: 14px !important;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.team.about-page .container ul.items {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.team.about-page .container ul.items .item {
+  background-color: #F9F8F8;
+  overflow: hidden;
+}
+.team.about-page .container ul.items .item .image {
+  height: 400px;
+  margin-block-end: 8px;
+}
+.team.about-page .container ul.items .item .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team.about-page .container ul.items .item .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team.about-page .container ul.items .item .text .inner-text h2 {
+  margin-block-end: 8px;
+}
+.team.about-page .container ul.items .item .text .inner-socail a {
+  padding-inline-start: 3px;
 }/*# sourceMappingURL=style.css.map */
