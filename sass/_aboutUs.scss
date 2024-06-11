@@ -1,0 +1,32 @@
+.entry-header.about-page {
+    background-image: url(../assets/images/about/about-banner.png);
+}
+
+
+
+//---------------- About -----------------
+
+
+.about.about-page {
+    background-color: #FFFFFF;
+
+    .image {
+        scale: 1.1;
+        translate: -60px;
+    }
+
+    .content {
+        .points ul {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+
+            .text {
+                all: unset;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+}

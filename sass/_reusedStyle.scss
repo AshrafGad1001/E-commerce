@@ -73,3 +73,25 @@
     justify-content: center;
     font-size: 14px;
 }
+
+
+
+//////////////////-------- start From About page To End -----------
+
+
+
+// --------Reused Style ----------
+
+.entry-header {
+    min-height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-block-end: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.entry-title {
+    font-size: 45px;
+}

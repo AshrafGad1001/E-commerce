@@ -129,6 +129,20 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 14px;
 }
 
+.entry-header {
+  min-height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-block-end: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.entry-title {
+  font-size: 45px;
+}
+
 .header {
   padding-block-start: 25px;
 }
@@ -1150,4 +1164,25 @@ input[type=number]::-webkit-outer-spin-button {
   .products ul {
     grid-template-columns: repeat(5, 1fr);
   }
+}
+.entry-header.about-page {
+  background-image: url(../assets/images/about/about-banner.png);
+}
+
+.about.about-page {
+  background-color: #FFFFFF;
+}
+.about.about-page .image {
+  scale: 1.1;
+  translate: -60px;
+}
+.about.about-page .content .points ul {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.about.about-page .content .points ul .text {
+  all: unset;
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
