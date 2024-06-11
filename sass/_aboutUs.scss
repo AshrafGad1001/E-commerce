@@ -174,16 +174,20 @@
 
         ul.items {
             display: grid;
-            gap: 20px;
+            gap: 10px;
             grid-template-columns: repeat(3, 1fr);
+            transition: 300ms;
 
             .item {
                 background-color: #F9F8F8;
                 overflow: hidden;
+                padding: 10px;
 
                 .image {
+                    overflow: hidden;
                     height: 400px;
                     margin-block-end: 8px;
+                    border-radius: 12px;
 
                     img {
                         height: 100%;
@@ -196,6 +200,7 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+
 
                     .inner-text {
                         h2 {
@@ -210,6 +215,64 @@
                     }
                 }
             }
+
+            .item:hover {
+                box-shadow: 0 5px 16px rgba($color: #000000, $alpha: 25%);
+                background-color: #FFFFFF;
+            }
         }
+    }
+}
+
+// -------------offer-product----------
+.offer-product.about-page {
+    color: #FFFFFF;
+    background-color: #274c5B;
+    margin-block-end: 70px;
+
+    .container {
+        .head {
+            small {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+        }
+
+        .items {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+
+            .item {
+                text-align: center;
+
+                .image {
+                    background-color: #FFFFFF;
+                    overflow: hidden;
+                    border-radius: 15px;
+                    height: 280px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-block-end: 20px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: scale-downs;
+
+                    }
+                }
+
+                .title {
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+        }
+
     }
 }
