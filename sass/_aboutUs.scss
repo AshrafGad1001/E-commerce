@@ -1,4 +1,12 @@
+.main-about-page p {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    margin-block-end: 10px;
+}
+
+
 .entry-header.about-page {
+    margin-block-start: 30px;
     background-image: url(../assets/images/about/about-banner.png);
 }
 
@@ -9,13 +17,19 @@
 
 .about.about-page {
     background-color: #FFFFFF;
+    font-size: 16px;
+
+
 
     .image {
-        scale: 1.1;
         translate: -60px;
     }
 
     .content {
+        p {
+            line-height: 1.5;
+        }
+
         .points ul {
             display: grid;
             gap: 20px;
@@ -25,8 +39,128 @@
                 all: unset;
                 display: flex;
                 align-items: center;
+
+                h4 {
+                    font-weight: 400;
+                    width: 150px;
+                }
             }
         }
     }
 
+}
+
+
+
+
+//---------------why-choose-us-------------
+
+.why-choose-us.about-page {
+    background-color: #F9F8F8;
+
+
+    .container {
+        .inner01 {
+            display: grid;
+            gap: 25px;
+            grid-template-columns: repeat(2, 1fr);
+            margin-block-end: 50px;
+
+            .content {
+                padding-inline-end: 60px;
+
+                .head h2 {
+                    width: 350px;
+                }
+
+                ul {
+                    li {
+                        margin-inline-start: 25px;
+                        margin-block-end: 25px;
+                        width: 80%;
+
+                        strong {
+                            display: inline-block;
+                            background-color: #ECECEC;
+                            padding: 12px;
+                            font-size: 16px;
+                            border-radius: 15px;
+                        }
+
+                        strong::before {
+                            content: '';
+                            width: 15px;
+                            height: 15px;
+                            border: 4px solid #7EB693;
+                            border-radius: 50%;
+                            margin-inline-end: 8px;
+                            display: inline-block;
+                            vertical-align: middle;
+
+                        }
+
+
+
+                        p {
+                            margin-block-start: 12px;
+                            margin-inline-start: 30px;
+                        }
+                    }
+                }
+            }
+
+            .image {
+                figure {
+                    max-height: 500px;
+                    overflow: hidden;
+                    border-radius: 20px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+        }
+        .inner02 {
+
+
+            ul {
+                width: 90%;
+                margin-inline: auto;
+                display: grid;
+                gap: 30px;
+                grid-template-columns: repeat(4, 1fr);
+                text-align: center;
+
+                li .item {
+                    background-color: #FFFFFF;
+                    padding: 30px;
+                    border-radius: 20px;
+
+                    .image {
+                        width: 60px;
+                        height: 60px;
+                        background-color: #F9F8F8;
+                        margin-inline: auto;
+                        margin-block-end: 10px;
+                        border-radius: 12px;
+                    }
+
+                    .caption {
+                        h3 {
+                            font-size: 18px;
+                            margin-block-end: 12px;
+                        }
+
+                        p {
+                            color: rgba($color: rgb(39, 76, 91), $alpha: 0.6);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
