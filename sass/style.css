@@ -1035,7 +1035,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 14px;
   }
   .container {
-    max-width: 1150px;
+    max-width: 1050px;
   }
   .header {
     padding-block-start: 15px;
@@ -1221,6 +1221,9 @@ input[type=number]::-webkit-outer-spin-button {
 .why-choose-us.about-page .container .inner01 .content .head h2 {
   width: 350px;
 }
+.why-choose-us.about-page .container .inner01 .content ul {
+  justify-content: center;
+}
 .why-choose-us.about-page .container .inner01 .content ul li {
   margin-inline-start: 25px;
   margin-block-end: 25px;
@@ -1265,6 +1268,7 @@ input[type=number]::-webkit-outer-spin-button {
   gap: 30px;
   grid-template-columns: repeat(4, 1fr);
   text-align: center;
+  justify-content: center;
 }
 .why-choose-us.about-page .container .inner02 ul li .item {
   background-color: #FFFFFF;
@@ -1372,4 +1376,60 @@ input[type=number]::-webkit-outer-spin-button {
 .offer-product.about-page .container .items .item .title {
   font-size: 15px;
   font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+  .entry-header {
+    min-height: 280px;
+  }
+  .why-choose-us.about-page .inner01 .image figure {
+    height: 370px;
+  }
+  .why-choose-us.about-page .inner02 ul li .item .caption h3 {
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  .team.about-page .items .item {
+    min-height: 450px !important;
+  }
+  .team.about-page .items .item .image {
+    height: 300px !important;
+  }
+  .team.about-page .container ul.items .item {
+    height: 220px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .why-choose-us.about-page .inner01 p {
+    line-height: 1.2 !important;
+  }
+  .why-choose-us.about-page .inner01 .content {
+    padding-block-end: 10px;
+    padding-inline-end: 10px !important;
+  }
+  .why-choose-us.about-page .inner01 ul li {
+    margin-inline-start: 0px;
+    margin-block-end: 0px;
+    width: 90%;
+  }
+  .why-choose-us.about-page .inner01 ul li strong {
+    font-size: 16px;
+    padding: 5px;
+  }
+  .why-choose-us.about-page .inner01 .image figure {
+    height: 270px;
+  }
+  .team.about-page .items .item {
+    min-height: 400px !important;
+  }
+  .team.about-page .items .item h2 {
+    font-size: 18px;
+    white-space: nowrap;
+  }
+  .team.about-page .items .item .image {
+    height: 250px !important;
+  }
+  .offer-product.about-page .container .items .item .image {
+    height: 180px;
+  }
 }/*# sourceMappingURL=style.css.map */
