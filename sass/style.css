@@ -138,6 +138,7 @@ input[type=number]::-webkit-outer-spin-button {
   min-height: 350px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   margin-block-end: 50px;
   display: flex;
   align-items: center;
@@ -1483,8 +1484,8 @@ input[type=number]::-webkit-outer-spin-button {
   .entry-header {
     min-height: 120px !important;
   }
-  .entry-header .entry-header {
-    font-size: 12px !important;
+  .entry-header .container .entry-header {
+    font-size: 12px;
   }
   .about.about-page .content .points ul {
     display: block;
@@ -1516,4 +1517,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .products {
   margin-block-end: 90px;
+}
+
+@media screen and (max-width: 575px) {
+  .entry-header .entry-title {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */
