@@ -149,6 +149,10 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 45px;
 }
 
+[data-margin-top-100] {
+  margin-block-start: 100px;
+}
+
 .header {
   padding-block-start: 25px;
 }

@@ -44,6 +44,25 @@ const swiper = new Swiper('.swiper', {
 });
 
 
+//----------------- product - page Nav-tabs ---------
 
 
 
+const tabLinks = document.querySelectorAll('[data-nav-link]');
+for (const link of tabLinks) {
+
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        /// Toggle In tabLinks
+        for (const ToggleActiveClass of tabLinks) {
+            ToggleActiveClass.classList.toggle('active')
+        }
+
+        /// Toggle In tabLinks Content
+        const tabs = document.querySelectorAll('.content-tabs .tab');
+        for (const ToggleActiveClass of tabs) {
+            ToggleActiveClass.classList.toggle('active')
+        }
+    })
+}

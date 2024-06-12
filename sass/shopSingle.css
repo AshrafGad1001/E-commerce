@@ -99,4 +99,45 @@
 }
 .shop-single .inner-content .content .form .button button.btn-dark {
   min-height: 55px;
+}
+.shop-single .nav-tabs {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  margin-block-end: 20px;
+}
+.shop-single .nav-tabs .tab-link {
+  display: block;
+  background-color: hsl(137, 28%, 95%);
+  height: 55px;
+  line-height: 55px;
+  width: 250px;
+  text-align: center;
+  border-radius: 16px;
+  color: hsl(197, 40%, 25%);
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 300ms;
+}
+.shop-single .nav-tabs .tab-link:hover,
+.shop-single .nav-tabs .tab-link.active {
+  color: hsl(137, 28%, 95%);
+  background-color: hsl(197, 40%, 25%);
+}
+.shop-single .content-tabs {
+  margin-block-end: 30px;
+}
+.shop-single .content-tabs .tab {
+  margin-inline: auto;
+}
+.shop-single .content-tabs .tab p {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  text-align: center;
+}
+.shop-single .content-tabs .tab:not(.active) {
+  display: none;
 }/*# sourceMappingURL=shopSingle.css.map */
