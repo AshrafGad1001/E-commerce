@@ -1489,6 +1489,19 @@ input[type=number]::-webkit-outer-spin-button {
   .about.about-page .content .points ul {
     display: block;
   }
+  .team.about-page .container ul.items {
+    display: block;
+  }
+  .team.about-page .items .item {
+    min-height: 500px !important;
+  }
+  .team.about-page .items .item h2 {
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  .team.about-page .items .item .image {
+    height: 350px !important;
+  }
   .offer-product.about-page .container .items .item .image {
     height: 180px;
   }

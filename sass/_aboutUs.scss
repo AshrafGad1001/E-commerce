@@ -444,6 +444,23 @@
         display: block;
     }
 
+    .team.about-page .container ul.items {
+        display: block;
+    }
+
+    .team.about-page .items .item {
+        min-height: 500px !important;
+
+        h2 {
+            font-size: 15px;
+            white-space: nowrap;
+        }
+
+        .image {
+            height: 350px !important;
+        }
+    }
+
     .offer-product.about-page .container .items {
 
         .item .image {
