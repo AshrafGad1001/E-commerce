@@ -1,0 +1,19 @@
+.entry-header.shop-page {
+    background-image: url(../assets/images/shop/shop-banner.png);
+}
+
+.header {
+    margin-block-end: 20px;
+}
+
+.products {
+    margin-block-end: 90px;
+}
+
+@media screen and (max-width:575px) {
+    .entry-header {
+        .entry-title {
+            font-size: 24px;
+        }
+    }
+}

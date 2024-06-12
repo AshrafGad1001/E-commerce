@@ -1,0 +1,336 @@
+.main-about-page p {
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  margin-block-end: 10px;
+}
+
+.entry-header.about-page {
+  margin-block-start: 30px;
+  background-image: url(../assets/images/about/about-banner.png);
+}
+
+.about.about-page {
+  background-color: #FFFFFF;
+  font-size: 16px;
+}
+.about.about-page .image {
+  translate: -60px;
+}
+.about.about-page .content p {
+  line-height: 1.5;
+}
+.about.about-page .content .points ul {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.about.about-page .content .points ul .text {
+  all: unset;
+  display: flex;
+  align-items: center;
+}
+.about.about-page .content .points ul .text h4 {
+  font-weight: 400;
+  width: 150px;
+}
+
+.why-choose-us.about-page {
+  background-color: #F9F8F8;
+}
+.why-choose-us.about-page .container .inner01 {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-block-end: 50px;
+}
+.why-choose-us.about-page .container .inner01 .content {
+  padding-inline-end: 60px;
+}
+.why-choose-us.about-page .container .inner01 .content .head h2 {
+  width: 350px;
+}
+.why-choose-us.about-page .container .inner01 .content ul {
+  justify-content: center;
+}
+.why-choose-us.about-page .container .inner01 .content ul li {
+  margin-inline-start: 25px;
+  margin-block-end: 25px;
+  width: 80%;
+}
+.why-choose-us.about-page .container .inner01 .content ul li strong {
+  display: inline-block;
+  background-color: #ECECEC;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 15px;
+}
+.why-choose-us.about-page .container .inner01 .content ul li strong::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 4px solid #7EB693;
+  border-radius: 50%;
+  margin-inline-end: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.why-choose-us.about-page .container .inner01 .content ul li p {
+  margin-block-start: 12px;
+  margin-inline-start: 30px;
+}
+.why-choose-us.about-page .container .inner01 .image figure {
+  max-height: 500px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.why-choose-us.about-page .container .inner01 .image figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.why-choose-us.about-page .container .inner02 ul {
+  width: 90%;
+  margin-inline: auto;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  justify-content: center;
+}
+.why-choose-us.about-page .container .inner02 ul li .item {
+  background-color: #FFFFFF;
+  padding: 30px;
+  border-radius: 20px;
+}
+.why-choose-us.about-page .container .inner02 ul li .item .image {
+  width: 60px;
+  height: 60px;
+  background-color: #F9F8F8;
+  margin-inline: auto;
+  margin-block-end: 10px;
+  border-radius: 12px;
+}
+.why-choose-us.about-page .container .inner02 ul li .item .caption h3 {
+  font-size: 18px;
+  margin-block-end: 12px;
+}
+.why-choose-us.about-page .container .inner02 ul li .item .caption p {
+  color: rgba(39, 76, 91, 0.6);
+}
+
+.team.about-page .container .head {
+  margin-block-end: 30px;
+}
+.team.about-page .container .head p {
+  font-size: 14px !important;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.team.about-page .container ul.items {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  transition: 300ms;
+}
+.team.about-page .container ul.items .item {
+  background-color: #F9F8F8;
+  overflow: hidden;
+  padding: 10px;
+}
+.team.about-page .container ul.items .item .image {
+  overflow: hidden;
+  height: 400px;
+  margin-block-end: 8px;
+  border-radius: 12px;
+}
+.team.about-page .container ul.items .item .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team.about-page .container ul.items .item .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team.about-page .container ul.items .item .text .inner-text h2 {
+  margin-block-end: 8px;
+}
+.team.about-page .container ul.items .item .text .inner-socail a {
+  padding-inline-start: 3px;
+}
+.team.about-page .container ul.items .item:hover {
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.25);
+  background-color: #FFFFFF;
+}
+
+.offer-product.about-page {
+  color: #FFFFFF;
+  background-color: #274c5B;
+  margin-block-end: 70px;
+}
+.offer-product.about-page .container .head small {
+  font-size: 28px;
+}
+.offer-product.about-page .container .head h2 {
+  font-size: 28px;
+}
+.offer-product.about-page .container .items {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.offer-product.about-page .container .items .item {
+  text-align: center;
+}
+.offer-product.about-page .container .items .item .image {
+  background-color: #FFFFFF;
+  overflow: hidden;
+  border-radius: 15px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block-end: 20px;
+}
+.offer-product.about-page .container .items .item .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: scale-downs;
+     object-fit: scale-downs;
+}
+.offer-product.about-page .container .items .item .title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+  .entry-header {
+    min-height: 280px;
+  }
+  .why-choose-us.about-page .inner01 .image figure {
+    height: 370px;
+  }
+  .why-choose-us.about-page .inner02 ul li .item .caption h3 {
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  .team.about-page .items .item {
+    min-height: 450px !important;
+  }
+  .team.about-page .items .item .image {
+    height: 300px !important;
+  }
+  .team.about-page .container ul.items .item {
+    height: 220px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .entry-header {
+    min-height: 250px !important;
+  }
+  .why-choose-us.about-page .inner01 p {
+    line-height: 1.2 !important;
+  }
+  .why-choose-us.about-page .inner01 .content {
+    padding-block-end: 10px;
+    padding-inline-end: 10px !important;
+  }
+  .why-choose-us.about-page .inner01 ul li {
+    margin-inline-start: 0px;
+    margin-block-end: 0px;
+    width: 90%;
+  }
+  .why-choose-us.about-page .inner01 ul li strong {
+    font-size: 16px;
+    padding: 5px;
+  }
+  .why-choose-us.about-page .inner01 .image figure {
+    height: 270px;
+  }
+  .team.about-page .items .item {
+    min-height: 400px !important;
+  }
+  .team.about-page .items .item h2 {
+    font-size: 18px;
+    white-space: nowrap;
+  }
+  .team.about-page .items .item .image {
+    height: 250px !important;
+  }
+  .offer-product.about-page .container .items .item .image {
+    height: 180px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .entry-header {
+    min-height: 200px !important;
+  }
+  .why-choose-us.about-page .container .inner01 {
+    all: unset;
+    display: block;
+  }
+  .why-choose-us.about-page .container .inner01 ul li {
+    width: 100%;
+  }
+  .why-choose-us.about-page .container .inner01 .image figure {
+    display: none;
+  }
+  .why-choose-us.about-page .container .inner02 ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .entry-header {
+    min-height: 280px;
+  }
+  .team.about-page .container ul.items .item .text {
+    flex-direction: column;
+  }
+  .team.about-page .container ul.items .item .text .head {
+    margin-block-end: 0;
+  }
+  .team.about-page .items .item {
+    min-height: 280px !important;
+  }
+  .team.about-page .items .item h2 {
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  .team.about-page .items .item .image {
+    height: 150px !important;
+  }
+  .offer-product.about-page .container .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .offer-product.about-page .container .items .item .image {
+    height: 220px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .entry-header {
+    min-height: 120px !important;
+  }
+  .entry-header .container .entry-header {
+    font-size: 12px;
+  }
+  .about.about-page .content .points ul {
+    display: block;
+  }
+  .team.about-page .container ul.items {
+    display: block;
+  }
+  .team.about-page .items .item {
+    min-height: 500px !important;
+  }
+  .team.about-page .items .item h2 {
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  .team.about-page .items .item .image {
+    height: 350px !important;
+  }
+  .offer-product.about-page .container .items .item .image {
+    height: 180px;
+  }
+}/*# sourceMappingURL=aboutUs.css.map */

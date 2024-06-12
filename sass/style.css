@@ -1484,7 +1484,7 @@ input[type=number]::-webkit-outer-spin-button {
     min-height: 120px !important;
   }
   .entry-header .entry-header {
-    font-size: 18px !important;
+    font-size: 12px !important;
   }
   .about.about-page .content .points ul {
     display: block;
@@ -1505,4 +1505,15 @@ input[type=number]::-webkit-outer-spin-button {
   .offer-product.about-page .container .items .item .image {
     height: 180px;
   }
+}
+.entry-header.shop-page {
+  background-image: url(../assets/images/shop/shop-banner.png);
+}
+
+.header {
+  margin-block-end: 20px;
+}
+
+.products {
+  margin-block-end: 90px;
 }/*# sourceMappingURL=style.css.map */

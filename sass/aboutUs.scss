@@ -433,8 +433,10 @@
 
 @media screen and (max-width:575px) {
     .entry-header {
-        .entry-header {
-            font-size: 18px !important;
+        .container {
+            .entry-header {
+                font-size: 12px;
+            }
         }
 
         min-height: 120px !important;
