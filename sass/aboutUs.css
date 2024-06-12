@@ -228,11 +228,11 @@
   }
 }
 @media screen and (max-width: 992px) {
-  .entry-header {
-    min-height: 250px !important;
+  .entry-header.about-page {
+    min-height: 250px;
   }
   .why-choose-us.about-page .inner01 p {
-    line-height: 1.2 !important;
+    line-height: 1.2;
   }
   .why-choose-us.about-page .inner01 .content {
     padding-block-end: 10px;
@@ -265,8 +265,8 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .entry-header {
-    min-height: 200px !important;
+  .entry-header.about-page {
+    min-height: 200px;
   }
   .why-choose-us.about-page .container .inner01 {
     all: unset;
@@ -280,9 +280,6 @@
   }
   .why-choose-us.about-page .container .inner02 ul {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .entry-header {
-    min-height: 280px;
   }
   .team.about-page .container ul.items .item .text {
     flex-direction: column;

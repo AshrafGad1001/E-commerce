@@ -140,4 +140,48 @@
 }
 .shop-single .content-tabs .tab:not(.active) {
   display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .entry-header {
+    min-height: 180px;
+  }
+  .entry-header .entry-title {
+    font-size: 30px;
+  }
+  .shop-single .inner-content .image .cat {
+    top: 110px;
+  }
+  .shop-single .nav-tabs .tab-link {
+    font-size: 16px !important;
+    width: 180px;
+  }
+  .shop-single .inner-content .content .form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .shop-single .inner-content .content .form label {
+    white-space: nowrap;
+  }
+  .shop-single .inner-content .content .form input {
+    min-width: 146px !important;
+  }
+  .shop-single .inner-content .content .form button {
+    margin-inline-start: 80px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 678px) {
+  .shop-single .inner-content {
+    margin-block-end: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .shop-single .content-tabs p {
+    width: 80%;
+    margin-inline: auto;
+  }
+  .shop-single .nav-tabs .tab-link {
+    width: 165px;
+  }
 }/*# sourceMappingURL=shopSingle.css.map */

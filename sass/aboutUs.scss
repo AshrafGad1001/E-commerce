@@ -315,14 +315,14 @@
 }
 
 @media screen and (max-width:992px) {
-    .entry-header {
-        min-height: 250px !important;
+    .entry-header.about-page {
+        min-height: 250px;
     }
 
     // why-choose-us 
     .why-choose-us.about-page .inner01 {
         p {
-            line-height: 1.2 !important;
+            line-height: 1.2;
         }
 
         .content {
@@ -371,8 +371,8 @@
 }
 
 @media screen and (max-width:768px) {
-    .entry-header {
-        min-height: 200px !important;
+    .entry-header.about-page {
+        min-height: 200px;
     }
 
     // why-choose-us 
@@ -397,9 +397,7 @@
         }
     }
 
-    .entry-header {
-        min-height: 280px;
-    }
+
 
     .team.about-page .container ul.items .item .text {
         flex-direction: column;
